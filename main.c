@@ -17,6 +17,7 @@
 // ====================  space for user defined functions =======================
 
 
+
 // ==================== space for main function ==================================
 
 int main() {
@@ -31,6 +32,10 @@ int main() {
     while(1) {
 
         uint16_t reading_values = adc_read();
+
+        if(reading_values > 300) {
+
+        }
 
     }
 
