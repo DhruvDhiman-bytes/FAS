@@ -23,17 +23,29 @@
 int main() {
     stdio_init_all(); // init the stdio function
 
+    // setting up the ADC pins
     adc_init(); // init the adc hardware
 
     adc_gpio_init(MQ2_SENSOR);
 
     adc_select_input(0); // selecting GPIO 26(ADC0) for taking inputs
 
+    // setting up the GPIO pins
+
+    gpio_init(LED_PIN);
+    gpio_set_dir(LED_PIN, GPIO_OUT);
+
+    gpio_init(BUZZER_PIN);
+    gpio_set_dir(BUZZER_PIN, GPIO_OUT);
+
     while(1) {
 
         uint16_t reading_values = adc_read();
 
         if(reading_values > 300) {
+
+        }
+        else {
 
         }
 
