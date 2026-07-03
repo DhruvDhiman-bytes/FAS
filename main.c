@@ -51,10 +51,10 @@ int main() {
         uint16_t reading_values = adc_read();
 
         if(reading_values > 300) {
-
+            On();
         }
         else {
-
+            Off();
         }
 
     }
