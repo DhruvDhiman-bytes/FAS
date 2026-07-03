@@ -1,4 +1,4 @@
-cmake_minimum_reqiured(VERSION 3.13)
+cmake_minimum_required(VERSION 3.13)
 
 include(pico_sdk_import.cmake)
 
@@ -23,4 +23,4 @@ target_link_libraries(FAS
 pico_enable_stdio_usb(FAS 1)
 pico_enable_stdio_uart(FAS 0)
 
-pico_add_extra_output(FAS)
+pico_add_extra_outputs(FAS)
