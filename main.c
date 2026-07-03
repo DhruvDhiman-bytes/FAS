@@ -16,7 +16,15 @@
 
 // ====================  space for user defined functions =======================
 
+void On() {
+    gpio_put(LED_PIN, true);
+    gpio_put(BUZZER_PIN, true);
+}
 
+void Off() {
+    gpio_put(LED_PIN, false);
+    gpio_put(BUZZER_PIN, false);
+}
 
 // ==================== space for main function ==================================
 
